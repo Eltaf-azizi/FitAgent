@@ -53,3 +53,26 @@ def get_user_workout(username: str):
 
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
+    
+
+    workout = generate_workout(
+        fitness_level=user.fitness_level,
+        goal=user.goal,
+        duration="30",
+        equipment=user.equipment
+    )
+
+
+    save_workout(user_id=user.id, workout_plan=workout)
+
+
+    return {
+        "username": user.name,
+        "goal": user.goal,
+        "fitness_level": user.fitness_level,
+        "equipment": user.equipment,
+        "workout_plan": workout
+    }
+
+
+log_message("✅ FastAPI server ready.")
