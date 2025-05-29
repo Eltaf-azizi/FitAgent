@@ -149,6 +149,28 @@
                             <td>{{ workout.date_completed.strftime('%b %d, %Y') }}</td>
                             <td>{{ workout.workout_name }}</td>
                             <td>{{ workout.duration }} min</td>
-                            
+                            <td>
+                                {% if workout.feedback %}
+                                    <button class="btn btn-sm btn-outline-info" 
+                                            data-bs-toggle="popover" 
+                                            title="Your Feedback" 
+                                            data-bs-content="{{ workout.feedback }}">
+                                        View
+                                    </button>
+                                {% else %}
+                                    <button class="btn btn-sm btn-outline-secondary" disabled>
+                                        None
+                                    </button>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
                                 
 
