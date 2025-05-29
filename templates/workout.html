@@ -56,3 +56,40 @@
                 </button>
             </div>
         </div>
+        
+        <div class="card-body">
+            {% if current_workout %}
+                <div class="accordion" id="workoutAccordion">
+                    {% for day in current_workout.days %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#day{{ loop.index }}">
+                                Day {{ loop.index }}: {{ day.focus }}
+                            </button>
+                        </h2>
+                        <div id="day{{ loop.index }}" class="accordion-collapse collapse {% if loop.first %}show{% endif %}" 
+                             data-bs-parent="#workoutAccordion">
+                            <div class="accordion-body">
+                                <p><strong>Duration:</strong> {{ day.duration }} minutes</p>
+                                <p><strong>Instructions:</strong> {{ day.instructions }}</p>
+                                
+                                <h5>Exercises:</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Exercise</th>
+                                                <th>Sets</th>
+                                                <th>Reps</th>
+                                                <th>Rest</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for exercise in day.exercises %}
+                                            <tr>
+                                                <td>
+                                                    <strong>{{ exercise.name }}</strong><br>
+                                                    <small class="text-muted">{{ exercise.description }}</small>
+                                
+
