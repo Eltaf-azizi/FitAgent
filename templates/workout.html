@@ -56,7 +56,6 @@
                 </button>
             </div>
         </div>
-        
         <div class="card-body">
             {% if current_workout %}
                 <div class="accordion" id="workoutAccordion">
@@ -116,7 +115,7 @@
                     </div>
                     {% endfor %}
                 </div>
-                {% else %}
+            {% else %}
                 <div class="text-center py-4">
                     <p class="lead">You don't have a workout plan yet.</p>
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generateWorkoutModal">
@@ -172,7 +171,6 @@
     </div>
     {% endif %}
 </div>
-
 
 <!-- Generate Workout Modal -->
 <div class="modal fade" id="generateWorkoutModal" tabindex="-1" aria-labelledby="generateWorkoutModalLabel" aria-hidden="true">
@@ -233,5 +231,16 @@
         return new bootstrap.Popover(popoverTriggerEl);
     });
     
-                                
-
+    function markAsCompleted(dayNumber) {
+        // In a real app, this would send an AJAX request to the server
+        alert(`Day ${dayNumber} marked as completed!`);
+        // You would then refresh the page or update the UI accordingly
+    }
+    
+    function modifyWorkout(dayNumber) {
+        // In a real app, this would open a modal or redirect to an edit page
+        alert(`Modify Day ${dayNumber}`);
+    }
+</script>
+{% endblock %}
+{% endblock %}
