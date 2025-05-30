@@ -172,5 +172,25 @@
     </div>
     {% endif %}
 </div>
+
+
+<!-- Generate Workout Modal -->
+<div class="modal fade" id="generateWorkoutModal" tabindex="-1" aria-labelledby="generateWorkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="generateWorkoutModalLabel">Generate New Workout Plan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" action="{{ url_for('generate_workout') }}">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="workoutDuration" class="form-label">Plan Duration (weeks)</label>
+                        <select class="form-select" id="workoutDuration" name="duration">
+                            <option value="1">1 Week</option>
+                            <option value="2" selected>2 Weeks</option>
+                            <option value="4">4 Weeks</option>
+                        </select>
+                    </div>
                                 
 
