@@ -69,3 +69,23 @@ def chat():
     if request.method == "POST":
         user_input = request.form["user_input"]
         response = chat_with_ai(user_input)
+
+
+
+        chat_memory.append({"role": "user", "text": user_input})
+        chat_memory.append({"role": "coach", "text": response})
+
+    return render_template("chat.html", chat_history=chat_memory)
+
+
+
+
+@app.route("/reset_chat")
+def reset_chat():
+    chat_memory.clear()
+    return redirect("/chat")
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=8000)
+
