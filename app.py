@@ -28,3 +28,24 @@ def register():
         equipment = request.form["equipment"]
 
 
+        add_user(name, age, fitness_level, goal, equipment)
+        return redirect(url_for("workout", username=name))
+    return render_template("register.html")
+
+
+
+@app.route("/workout", methods=["GET", "POST"])
+def workout():
+    if request.method == "POST":
+        username = request.form["username"]
+        return redirect(url_for("result", username=username))
+    return render_template("workout.html")
+
+
+
+@app.route("/workout/result/<username>")
+def result(username):
+    user = get_user(username)
+    if not user:
+        return f"User '{username}' not found.", 404
+    
