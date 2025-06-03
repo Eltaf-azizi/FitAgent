@@ -49,3 +49,23 @@ def result(username):
     if not user:
         return f"User '{username}' not found.", 404
     
+
+    workout_plan = generate_workout(
+        user.fitness_level,
+        user.goal,
+        "30",
+        user.equipment
+    )
+
+
+    save_workout(user.id, workout_plan)
+
+
+    return render_template("result.html", user=user, workout=workout_plan)
+
+
+@app.route("/chat", methods=["GET", "POST"])
+def chat():
+    if request.method == "POST":
+        user_input = request.form["user_input"]
+        response = chat_with_ai(user_input)
