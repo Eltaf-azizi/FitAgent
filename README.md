@@ -53,3 +53,24 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
 
  - API Endpoints (api.py): Handles data exchange between the frontend and AI logic.
 
+
+## Technology Stack
+### Backend
+ - Python (with Flask framework)
+
+ - SQLite (fitness.db for data storage)
+
+ - Conda for environment management
+
+ - Python Standard Library modules:
+
+   - logging (`logger.py`)
+
+   - sqlite3 (`database.py`)
+
+### Frontend
+ - **HTML5** (`templates/`)
+
+ - CSS3
+
+ - Jinja2 templating
