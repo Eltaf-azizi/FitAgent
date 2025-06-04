@@ -32,3 +32,24 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
 
  - Rest Timer & Pacing: Smart rest intervals based on workout intensity.
 
+
+### 5. Web-Based Dashboard 💻🖥️
+ - Responsive Design: Works on desktop and mobile browsers.
+
+ - Interactive UI:
+
+   - Chat Interface (chat.html) – Talk to your AI coach.
+
+   - Workout Display (workout.html) – View exercise details (demos, reps, sets).
+
+   - Results Page (result.html) – Review completed workouts.
+
+ - User Registration (register.html) – Secure sign-up/login system.
+
+### 6. Backend & Data Management 🛠️🗃️
+ - SQLite Database (fitness.db): Stores user profiles, workout history, and preferences.
+
+ - Logging System (logger.py): Tracks app activity and errors for debugging.
+
+ - API Endpoints (api.py): Handles data exchange between the frontend and AI logic.
+
