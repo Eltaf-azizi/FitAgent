@@ -87,3 +87,29 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
 
  - Comprehensive logging system (`logger.py`)
 
+## Project Structure
+    FitAgent/
+    ├── _pysache/                       # Main application package
+    │   ├── __pycache__/                # Python bytecode cache
+    │   │   ├── api.cpython-312.pyc
+    │   │   └── logger.cpython-312.pyc
+    │   ├── templates/                  # Frontend templates
+    │   │   ├── base.html               # Base template
+    │   │   ├── chat.html               # Chat interface
+    │   │   ├── home.html               # Home page
+    │   │   ├── register.html           # User registration
+    │   │   ├── result.html             # Workout results
+    │   │   └── workout.html            # Workout display
+    │   ├── .conda                      # Conda environment config
+    │   ├── .env                        # Environment variables
+    │   ├── api.py                      # API endpoints
+    │   ├── app.log                     # Application log file
+    │   ├── app.py                      # Main application entry point
+    │   ├── chat_agent.py               # AI chat functionality
+    │   ├── database.py                 # Database operations
+    │   ├── fitness.db                  # SQLite database
+    │   ├── logger.py                   # Logging configuration
+    │   ├── README.md                   # Project documentation
+    │   ├── requirements.txt            # Python dependencies
+    │   └── workout_generator.py        # Workout generation logic
+
