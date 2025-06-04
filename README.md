@@ -74,3 +74,16 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
  - CSS3
 
  - Jinja2 templating
+
+### AI Components
+ - Custom workout generation logic (`workout_generator.py`)
+
+ - Chat agent implementation (`chat_agent.py`)
+
+### Development Tools
+ - .env for environment configuration
+
+ - requirements.txt for dependency management
+
+ - Comprehensive logging system (`logger.py`)
+
