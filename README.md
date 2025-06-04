@@ -18,3 +18,17 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
 
  - Exercise Variety: Avoid plateaus with dynamically changing routines.
 
+### 3. User Management & Progress Tracking 📊🔍
+ - User Profiles: Save fitness levels, goals, and preferences.
+
+ - Workout History: Track completed sessions with performance metrics (sets, reps, duration).
+
+ - Progress Analytics: Visual charts show improvements over time (strength, endurance, consistency).
+
+### 4. AI-Powered Workout Generation ⚙️🧠
+ - Dynamic Exercise Selection: AI picks exercises based on available equipment (home/gym).
+
+ - Form Tips: Basic guidance on proper exercise techniques (future: CV integration).
+
+ - Rest Timer & Pacing: Smart rest intervals based on workout intensity.
+
