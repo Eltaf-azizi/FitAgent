@@ -160,3 +160,25 @@ python database.py
 ```bash
 python app.py
 ```
+
+## Usage
+1. Access the web interface at http://localhost:5000
+
+2. Register a new account or login
+
+3. Interact with the chat agent to:
+
+    - Set fitness goals
+
+    - Receive workout recommendations
+
+    - Track progress
+
+4. View generated workouts in the workout interface
+
+
+
+
+
+
+
