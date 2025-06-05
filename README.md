@@ -164,7 +164,7 @@ python app.py
 ## Usage
 1. Access the web interface at http://localhost:5000
 
-2. Register a new account or login
+2. Register a new account or log in
 
 3. Interact with the chat agent to:
 
@@ -177,7 +177,18 @@ python app.py
 4. View generated workouts in the workout interface
 
 
+## API Documentation
+The application provides RESTful API endpoints (api.py) for:
 
+ - User authentication
+
+ - Workout generation
+
+ - Chat interactions
+
+ - Progress tracking
+
+Access the API documentation at `http://localhost:5000/api/docs` after starting the application.
 
 
 
