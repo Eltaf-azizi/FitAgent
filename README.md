@@ -129,3 +129,15 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
 git clone [repository-url]
 cd ITAGENT/_pysache
 ```
+
+2. Create and activate a Conda environment:
+
+```bash
+conda create --name itagent python=3.12
+conda activate itagent
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
