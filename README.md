@@ -113,3 +113,19 @@ FitAgent is an AI-powered fitness coaching platform that provides personalized w
     │   ├── requirements.txt            # Python dependencies
     │   └── workout_generator.py        # Workout generation logic
 
+
+## Installation Guide
+### Prerequisites
+ - Python 3.12+
+
+ - Conda (recommended)
+
+ - pip
+
+### Setup Instructions
+1. Clone the repository:
+
+```bash
+git clone [repository-url]
+cd ITAGENT/_pysache
+```
