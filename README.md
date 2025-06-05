@@ -141,3 +141,22 @@ conda activate itagent
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Configure environment variables:
+
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+5. Initialize the database:
+
+```bash
+python database.py
+```
+
+6. Run the application:
+
+```bash
+python app.py
+```
